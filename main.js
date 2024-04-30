@@ -7,7 +7,7 @@ const spanAprovado = '<span class="resultado aprovado">Aprovado</span>';
 const spanReprovado = '<span class="resultado reprovado">Reprovado</span>';
 const notaMinima = parseFloat(prompt("Digite a nota mínima:"));
 
-let linhas = ''; //Linha acima do preventDefault fica como varial global e não e resetada ou acionar o evento submit do botão
+let linhas =''; //Linha acima do preventDefault fica como varial global e não e resetada ou acionar o evento submit do botão
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -27,7 +27,7 @@ form.addEventListener('submit', function(e){
         atividades.push(inputNomeAtividade.value);
         notas.push(parseFloat(inputNotaAtividade.value));
 
-        let linha ='<tr>';//Aberturqa da linha
+        let linha ='<tr>';//Abertura da linha
         //Aqui as colunas são adicionadas
         linha += `<td>${inputNomeAtividade.value}</td>`;
         linha += `<td>${inputNotaAtividade.value}</td>`;
